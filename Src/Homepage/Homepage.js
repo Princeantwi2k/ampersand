@@ -10,10 +10,10 @@ const Homepage = ({navigation}) => {
     return (
         <View style={styles.contianer}>
             <View style={styles.day}>
-                <Image source={require("../image/logo.png")} style={styles.img} />
+                <Image source={require("../image/logo1.png")} style={styles.img} />
             </View>
             <View style={styles.week}>
-                <Text style={styles.text1}>AMPERSAND</Text>
+                <Text style={styles.text1}>SIKA DESIGN</Text>
                 <Text style={styles.text12}>CONTACTS</Text>
             </View>
             <View style={styles.month}>

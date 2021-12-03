@@ -6,11 +6,11 @@ const Aboutpage = ({navigation}) => {
     return (
         <View style={styles.container}>
             <View style={styles.img}>
-                <Image source={require("../image/pic.jpg")} style={styles.pic} />
+                <Image source={require("../image/pic1.jpg")} style={styles.pic} />
             </View>
             <View style={styles.text}>
-                <Text style={styles.texts}>KEEP IN TOUCH WITH THE PEOPLE OF AMPERSAND</Text>
-                <Text style={styles.textss}>Sign in or register with yur ampersome email</Text>
+                <Text style={styles.texts}>KEEP IN TOUCH WITH THE PEOPLE OF SIKA DESIGN</Text>
+                <Text style={styles.textss}>Sign in or register with your sika design email</Text>
             </View>
             <View style={styles.in}>
                 <TouchableOpacity style={styles.registers} onPress={()=>navigation.navigate("register")}>

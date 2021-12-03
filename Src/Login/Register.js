@@ -36,6 +36,7 @@ const Register = ({navigation}) => {
 
     
     return (
+      
         <View style={styles.container}>
              <View style={styles.signin}>
                 <TouchableOpacity  style={styles.icon}    onPress={() => {
@@ -55,28 +56,35 @@ const Register = ({navigation}) => {
           </View>}
     </TouchableOpacity>
             </View>
-          
-            <View style={styles.freein}>
-           
-           <Text style={styles.text2}>Email</Text>
-           <Text style={styles.text3}>john.smith@mail.com</Text>
-           <TextInput style={styles.email} />
-             <Text style={styles.text4}>Password</Text>
-           <TextInput style={styles.password}/>
-           
-           </View>
-       <View style={styles.out}>
-           <TouchableOpacity style={styles.signtouch}>
-               <Text style={styles.name}> SIGN IN</Text>
-           </TouchableOpacity>
-           </View>
-       <View style={styles.in}>
-           <Text style={styles.ck}>Forgot? </Text>
-       <TouchableOpacity  style={styles.reset} >
-          <Text style={styles.ck}>Reset Password</Text>
-       </TouchableOpacity>
-           </View>
+         
+          <View style={styles.text}>
+          <Text style={styles.fulls}>Prince Antwi</Text>
+              <Text style={styles.full}>Full Name</Text>
+              <TextInput placeholder="" style={styles.input} />
+              <Text style={styles.email}>Email</Text>
+              <Text style={styles.emails}>antwi2k@gmail.com</Text>
+              <TextInput placeholder=""  style={styles.input} />
+              <Text style={styles.number}>Phone Number</Text>
+              <Text style={styles.numbers}>+233(550)300103</Text>
+              <TextInput placeholder=""style={styles.input} />
+              <Text  style={styles.role}>Role</Text>
+              <Text  style={styles.roles}>FrontEnd developer</Text>
+              <TextInput placeholder="" style={styles.input} />
+              <Text  style={styles.twitter}>Twitter</Text>
+              <Text  style={styles.twitters}>@endtime24</Text>
+              <TextInput placeholder="" style={styles.input} />
+              <Text  style={styles.link}>Linkedin</Text>
+              <Text  style={styles.links}>/Prince Antwi</Text>
+              <TextInput placeholder="" style={styles.input} />
+            
+          </View>
+          <View style={styles.out}>
+                <TouchableOpacity style={styles.signtouch} onPress={()=>{navigation.navigate("code")}}>
+                    <Text style={styles.name}> REGISTER </Text>
+                </TouchableOpacity>
+                </View>
         </View>
+       
     );
 }
 
@@ -90,14 +98,7 @@ const styles = StyleSheet.create({
         flexDirection:"row",
        
     },
-    freein:{
-        flex:0.5,
-       
-      
-    },
-    email:{
-        
-          },
+  
     icon:{
    flex:0.3,
    marginTop:20,
@@ -113,13 +114,13 @@ const styles = StyleSheet.create({
     fontSize:20
     },
     login:{
-        flex:0.3,
-        // position:"relative"
+        flex:0.3, 
     },
-    pic:{
-        height:200,
-        width:420
-       },
+    out:{
+        flex:0.1,
+      
+    },
+  
        photo:{
            textAlign:"center",
            marginTop:70,
@@ -130,7 +131,120 @@ const styles = StyleSheet.create({
            color:"white",
            borderColor:"white"
        },
-      
+       text:{
+           flex:0.5,
+          
+          
+       },
+       full:{
+           position:"absolute",
+           zIndex:2,
+           fontSize:20,
+           paddingLeft:10,
+           top:10
+        
+       },
+       input:{
+       padding:15,
+       backgroundColor:"white",
+       borderBottomWidth:1,
+       borderBottomColor:"#ebeaea",
+       elevation:5
+       
+       },
+       email:{
+       position:"absolute",
+       top:55,
+       zIndex:2,
+       fontSize:20,
+        paddingLeft:10,
+       },
+       number:{
+           position:"absolute",
+           zIndex:2,
+           top:100,
+           fontSize:20,
+            paddingLeft:10,
+       },
+       role:{
+           position:"absolute",
+           zIndex:99,
+           fontSize:20,
+           top:150,
+            paddingLeft:10,
+       },
+       twitter:{
+           position:"absolute",
+           zIndex:99,
+           fontSize:20,
+           top:200,
+            paddingLeft:10,
+       },
+       link:{
+           position:"absolute",
+         paddingLeft:10,
+           zIndex:99,
+           fontSize:20,
+           top:240
+       },
+    fulls:{
+        position:"absolute",
+        zIndex:99,
+        right:10,
+        fontSize:18,
+        top:10,
+    },
+    emails:{
+        position:"absolute",
+        zIndex:99,
+        right:10,
+        top:60,
+        color:"gray"
+    },
+    numbers:{
+        position:"absolute",
+        zIndex:99,
+        right:10,
+        top:110,
+        color:"gray"
+    },
+    roles:{
+        position:"absolute",
+        zIndex:99,
+        right:10,
+        top:150,
+        color:"gray"
+    },
+    twitters:{
+        position:"absolute",
+        zIndex:99,
+        right:10,
+        top:200,
+        color:"gray"
+    },
+    links:{
+        position:"absolute",
+        zIndex:99,
+        right:10,
+        top:250,
+        color:"gray"
+    },
+    signtouch:{
+        backgroundColor:"#fe2b4c",
+        height:70,
+        marginLeft:20,
+        marginRight:20,
+        borderRadius:20
+        
+         },
+         name:{
+            fontSize:20,
+            justifyContent:"center",
+            textAlign:"center",
+            marginTop:20,
+            color:"white"
+        }
+     
     
 })
 

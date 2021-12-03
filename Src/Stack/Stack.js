@@ -6,6 +6,8 @@ import Homepage from '../Homepage/Homepage';
 import Login from '../Login/Login';
 import Aboutpage from '../Homepage/Aboutpage';
 import Register from '../Login/Register';
+import Code from '../Homepage/Code';
+import Scanner from '../Homepage/Scanner';
 
 
 const Stack = createStackNavigator()
@@ -20,6 +22,8 @@ const Navigation = () => {
                  <Stack.Screen name="about" component={Aboutpage} />
                  <Stack.Screen name="login" component={Login} />
                  <Stack.Screen name="register" component={Register} />
+                 <Stack.Screen name="code" component={Code} />
+                 <Stack.Screen name="scan" component={Scanner} />
                  
              </Stack.Navigator>
         </NavigationContainer>

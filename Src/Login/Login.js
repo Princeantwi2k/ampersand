@@ -17,7 +17,7 @@ const Login = () => {
                 <Text style={styles.signtext}> Sign In</Text>
             </View>
             <View style={styles.login}>
-            <Image source={require("../image/kk.jpg")} style={styles.pic} />
+            <Image source={require("../image/pic2.jpg")} style={styles.pic} />
             </View>
             <View style={styles.freein}>
            
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
    height:70,
    marginLeft:20,
    marginRight:20,
-   borderRadius:30
+   borderRadius:20
    
     },
     ck:{
