@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     day:{
       flex:0.4,
       
+      
     },
     week:{
         flex:0.5,
@@ -45,7 +46,7 @@ const styles = StyleSheet.create({
     img:{
       height:80,
       width:300,
-      marginLeft:30,
+      marginLeft:70,
       marginTop:100
     },
     text:{
